@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AMONG THE LATEST</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f3f3f3;
+        margin: 0;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 28px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    .card {
+        background: white;
+        border: 2px solid black;
+        border-radius: 14px;
+        padding: 25px;
+        height: 520px;
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        gap: 14px; /* Even spacing */
+    }
+
+    .card img {
+        width: 100%;
+        height: 330px;
+        object-fit: cover;
+        border-radius: 10px;
+        border: 1px solid #ddd;
+    }
+
+    .name {
+        font-size: 18px;
+        font-weight: 700;
+        color: black;
+        margin-top: 4px;
+    }
+
+    .price {
+        font-size: 15px;
+        color: #444;
+        margin-top: -4px;
+    }
+
+    .sizes {
+        font-size: 14px;
+        font-weight: 600;
+        color: #222;
+        margin-top: -6px;
+    }
+
+    .bottom-area {
+        margin-top: auto;
+        padding-top: 4px;
+    }
+
+    .btn {
+        padding: 10px 18px;
+        border: 2px solid black;
+        background: black;
+        color: white;
+        border-radius: 8px;
+        font-size: 15px;
+        cursor: pointer;
+        text-decoration: none;
+        transition: 0.25s;
+        width: 80%;
+        display: inline-block;
+    }
+
+    .btn:hover {
+        background: white;
+        color: black;
+    }
+
+    @media(max-width: 800px) {
+        .grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media(max-width: 500px) {
+        .grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+
+</head>
+<body>
+
+<h1><U>AMONG THE LATEST</U></h1>
+
+<div class="grid">
+
+    <!-- iPhone 17 Pro Max -->
+    <div class="card">
+        <img src="promax.jpeg">
+        <div class="name">iPhone 17 Pro Max</div>
+        <div class="price">Starts from $1199</div>
+        <div class="sizes">128GB • 256GB • 512GB • 1TB</div>
+        <div class="bottom-area">
+            <a href="https://www.apple.com/in/iphone-17-pro/specs/" class="btn">More Details</a>
+        </div>
+    </div>
+
+    <!-- iPhone 17 Pro -->
+    <div class="card">
+        <img src="pro.jpeg">
+        <div class="name">iPhone 17 Pro</div>
+        <div class="price">Starts from $1099</div>
+        <div class="sizes">128GB • 256GB • 512GB</div>
+        <div class="bottom-area">
+            <a href="https://www.apple.com/in/iphone-17-pro/specs/" class="btn">More Details</a>
+        </div>
+    </div>
+
+    <!-- iPhone 17 -->
+    <div class="card">
+        <img src="17.jpeg">
+        <div class="name">iPhone 17</div>
+        <div class="price">Starts from $799</div>
+        <div class="sizes">128GB • 256GB</div>
+        <div class="bottom-area">
+            <a href="https://www.apple.com/in/iphone-17/specs/" class="btn">More Details</a>
+        </div>
+    </div>
+
+    <!-- iPhone Air -->
+    <div class="card">
+        <img src="air.jpeg">
+        <div class="name">iPhone Air</div>
+        <div class="price">Starts from $999</div>
+        <div class="sizes">128GB • 256GB • 512GB</div>
+        <div class="bottom-area">
+            <a href="https://www.apple.com/in/iphone-air/specs/" class="btn">More Details</a>
+        </div>
+    </div>
+
+    <!-- iPhone 16 -->
+    <div class="card">
+        <img src="16.jpeg">
+        <div class="name">iPhone 16</div>
+        <div class="price">Starts from $699</div>
+        <div class="sizes">128GB • 256GB</div>
+        <div class="bottom-area">
+            <a href="https://www.apple.com/in/iphone-16/specs/" class="btn">More Details</a>
+        </div>
+    </div>
+
+    <!-- iPhone 16e -->
+    <div class="card">
+        <img src="16e.jpeg">
+        <div class="name">iPhone 16e</div>
+        <div class="price">Starts from $599</div>
+        <div class="sizes">64GB • 128GB</div>
+        <div class="bottom-area">
+            <a href="https://www.apple.com/in/iphone-16e/specs/" class="btn">More Details</a>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
